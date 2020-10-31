@@ -25,8 +25,6 @@ then
 	foldername=$(($H-$T))
 	echo "HEADS WON BY - " $foldername "TIMES"
 
-
-
 elif [[ $H -lt $T ]]
 then
 	echo "TAIL WINs"
@@ -35,4 +33,13 @@ then
 
 else 
 	echo "ITS a TIE"
+	
+	if [[ (($H-$T)) -eq 2 ]]
+	then
+		echo "STOP THE FLIPPING"
+	fi
+
 fi
+
+
+
